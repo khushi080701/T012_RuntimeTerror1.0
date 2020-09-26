@@ -11,24 +11,18 @@
 
   .carsel {
     margin-top: 30px;
-    margin-bottom:20px ;
+    
     padding: 10px;
 }
 
 .richa {
     background-color: #023e46;
-    padding:10px 100px;
+    padding:10px 100px 0px 100px;
 }
 #khushi {
     text-align: center;
-    
+}
 
-}
-#col1 {
-    background-color: #d6e0f7;
-    padding: 80px;
-    
-}
 #col2 {
     background-color: #88bdbc;
     padding: 80px;
@@ -82,7 +76,17 @@ h2 {
     text-shadow: #333;
 }
 
-
+.background-image{
+    background-image: url(im.jpg);
+    padding: 280px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: black;
+    overflow: hidden;
+    
+    
+    
+}
 
 
 
