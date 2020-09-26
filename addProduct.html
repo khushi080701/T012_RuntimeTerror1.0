@@ -66,8 +66,16 @@
   </div>
   </div>
   </section>
-                <form>
+ 
+   
+  
 
+<div class="container">
+                <form method='POST' enctype='multipart/form-data' id='addPostForm'>
+                  {% csrf_token %}
+                  <div class="postHeader">
+                    <h4>Donate Here!</h4>
+                  </div>
                     <div class="container">
                       <label for="uname"><b>Name</b></label>
                       <input type="text" placeholder="Enter Full Name" name="uname" required>
@@ -104,14 +112,17 @@
                       <label for="uname"><b>Image</b></label>
                       <input type="file" id="img" name="img" accept="image/*">
                     
-                      <button formaction="#" type="submit" class="btn butt" >Submit</button>
+                      <div class="container">
+                        {{form.as_p}}
+                        <button type='submit' class='btn btn-dark'id='submitBtn'>Submit</button>
+                      </div>
                       <label>
                     
                     </div>
                     
-                    </div>
+                    
                 </form>
-                        
+              </div>
 			
 		
 			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -129,6 +129,37 @@
 
 
 
+		<div class="container" id='pushDown'>
+			<ul class="collection with-header" id='postList'>
+			  
+			  {% for crop in newCrop %}
+			  <li class="collection-item avatar">
+				<img src="logo.png" alt="logo" class='circle materialboxed' height="90px" width="90px">
+				<div>
+				<span class="title">{{crop.addCropName}}</span>
+				{% if user.is_authenticated %}
+				  
+				{% endif %}
+				</div>
+				<p>
+				  <div>
+					<span class="gapper">Quantity : {{crop.addCropQuantity}}kg</span>
+					<a class="right" id="contact" href='addProduct.html'>Donate</a>
+				  </div>
+				  {{crop.addCropDescription}} <br>
+				</p>
+			  </li>
+			  {% endfor %}
+			</ul>
+		
+		  </div>
+	
+
+
+
+
+
+
 		<section class="contact">
 			<div class="content">
 				<h2>Contact Us</h2>
@@ -218,6 +249,40 @@
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 				
-	
+			<script>
+				$(document).ready(function(){
+				  $('.materialboxed').materialbox();
+				});
+		
+				var list, i, switching, b, shouldSwitch;
+				list = document.getElementById("postList");
+				switching = true;
+				/* Make a loop that will continue until
+				no switching has been done: */
+				while (switching) {
+				  // Start by saying: no switching is done:
+				  switching = false;
+				  b = list.getElementsByTagName("LI");
+				  // Loop through all list items:
+				  for (i = 0; i < (b.length - 1); i++) {
+					// Start by saying there should be no switching:
+					shouldSwitch = false;
+					/* Check if the next item should
+					switch place with the current item: */
+					if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+					  /* If next item is alphabetically lower than current item,
+					  mark as a switch and break the loop: */
+					  shouldSwitch = true;
+					  break;
+					}
+				  }
+				  if (shouldSwitch) {
+					/* If a switch has been marked, make the switch
+					and mark the switch as done: */
+					b[i].parentNode.insertBefore(b[i + 1], b[i]);
+					switching = true;
+				  }
+				}
+			  </script>
     </body>
 </html>
