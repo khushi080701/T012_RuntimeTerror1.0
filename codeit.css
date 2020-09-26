@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif; 
+}
+.navbar{
+					
+    background-color: #00bcd4;
+    
+    
+}
+.navbar ul{
+    padding-top:3px;
+    overflow:auto;
+    padding-inline-start:5px;
+    
+}
+
+.navbar li{
+    
+    float:left;
+    margin:20px 15px;
+    list-style:none;
+}
+.navbar li a{
+    
+    text-decoration:none;
+    color:white;
+    padding:10px;
+}
+.navbar li a:hover{
+    color: #4c3535;
+    cursor:pointer;
+    background-color: #eae7e7;
+    border-radius:5px;
+    
+}
+#search{
+    float:right;
+    padding:5px 25px;
+    margin:10px 30px;
+    border-radius:10px;
+    border-color:black;
+}
+.carsel {
+    margin-top: 30px;
+    margin-bottom:20px ;
+}

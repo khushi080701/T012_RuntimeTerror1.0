@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif; 
+   
+}
+.navbar{
+					
+    background-color: #00bcd4;
+    
+    
+}
+.navbar ul{
+    padding-top:3px;
+    overflow:auto;
+    padding-inline-start:3px;
+    
+}
+
+.navbar li{
+    
+    float:left;
+    margin:20px 15px;
+    list-style:none;
+}
+.navbar li a{
+    
+    text-decoration:none;
+    color:white;
+    padding:5px;
+}
+.navbar li a:hover{
+    color: #4c3535;
+    cursor:pointer;
+    background-color: #eae7e7;
+    border-radius:5px;
+    
+}
+#search{
+    float:right;
+    padding:5px 25px;
+    margin:10px 30px;
+    border-radius:10px;
+    border-color:black;
+}
+.carsel {
+    margin-top: 30px;
+    margin-bottom:20px ;
+}
+
+form {
+    
+    background-color: rgb(230, 230, 230);
+    font-family: 'Lemonada',sans-serif;
+  }
+  
+  input[type=text], input[type=password]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  /*added by sayli*/
+  input[type=number],input[type=file]{
+    width: 38%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  /*added by sayli*/
+  select{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  .butt {
+      background-color: #023E46; 
+      color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  }
