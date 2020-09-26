@@ -10,8 +10,7 @@
 
 
   .carsel {
-    margin-top: 30px;
-    
+   
     padding: 10px;
 }
 
@@ -21,6 +20,10 @@
 }
 #khushi {
     text-align: center;
+}
+#col1 {
+    background-color: #b5c4c3;
+    padding: 80px;
 }
 
 #col2 {
@@ -35,40 +38,6 @@
     width: 100px;
     text-align: right end;
 }
-
-#a {
-    height: 70px;
-    width: 70px;
-    align-items: baseline;
-}
-#b {
-    height: 70px;
-    width: 70px;
-    text-align: left center;
-}
-
-#c {
-    height: 70px;
-    width: 70px;
-    text-align: right top;
-}
-
-#d {
-    height: 70px;
-    align-items: baseline;
-    width: 70px;
-}
-
-#e {
-    height: 70px;
-    width: 70px;
-    text-align: right center;
-}
-#f {
-    height: 70px;
-    width: 70px;
-    text-align: left top;
-}
 h2 {
     padding: 100px;
     text-transform: uppercase;
@@ -76,17 +45,6 @@ h2 {
     text-shadow: #333;
 }
 
-.background-image{
-    background-image: url(im.jpg);
-    padding: 280px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    color: black;
-    overflow: hidden;
-    
-    
-    
-}
 
 
 
