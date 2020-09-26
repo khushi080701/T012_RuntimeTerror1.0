@@ -7,46 +7,313 @@
    box-sizing: border-box;
    font-family: 'Poppins',sans-serif; 
 }
-.navbar{
-					
-    background-color: #00bcd4;
-    
-    
-}
-.navbar ul{
-    padding-top:3px;
-    overflow:auto;
-    padding-inline-start:5px;
-    
-}
 
-.navbar li{
-    
-    float:left;
-    margin:20px 15px;
-    list-style:none;
-}
-.navbar li a{
-    
-    text-decoration:none;
-    color:white;
-    padding:10px;
-}
-.navbar li a:hover{
-    color: #4c3535;
-    cursor:pointer;
-    background-color: #eae7e7;
-    border-radius:5px;
-    
-}
-#search{
-    float:right;
-    padding:5px 25px;
-    margin:10px 30px;
-    border-radius:10px;
-    border-color:black;
-}
-.carsel {
+
+  .carsel {
     margin-top: 30px;
     margin-bottom:20px ;
+    padding: 10px;
 }
+
+.richa {
+    background-color: #023e46;
+    padding:10px 100px;
+}
+#khushi {
+    text-align: center;
+    
+
+}
+#col1 {
+    background-color: #d6e0f7;
+    padding: 80px;
+    
+}
+#col2 {
+    background-color: #88bdbc;
+    padding: 80px;
+}
+.col3 {
+    padding: 13px;
+}
+.relief{
+    height: 100px;
+    width: 100px;
+    text-align: right end;
+}
+
+#a {
+    height: 70px;
+    width: 70px;
+    align-items: baseline;
+}
+#b {
+    height: 70px;
+    width: 70px;
+    text-align: left center;
+}
+
+#c {
+    height: 70px;
+    width: 70px;
+    text-align: right top;
+}
+
+#d {
+    height: 70px;
+    align-items: baseline;
+    width: 70px;
+}
+
+#e {
+    height: 70px;
+    width: 70px;
+    text-align: right center;
+}
+#f {
+    height: 70px;
+    width: 70px;
+    text-align: left top;
+}
+h2 {
+    padding: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+		*{
+		   margin: 0;
+		   padding: 0;
+		   box-sizing: border-box;
+		   font-family: 'Poppins',sans-serif; 
+		}
+		.contact{
+			position:relative;
+			min-height: 100vh;
+			padding: 50px 100px;
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-image: url(https://www.ljroseaccounting.co.uk/wp-content/uploads/2016/09/office-background.jpg);
+			/* opacity: 90%; */
+			background-size: cover;
+		}
+		.contact .content{
+			max-width:800px;
+			text-align: center;
+		}
+		.contact .content h2{
+			font-size:2.5em ;
+			font-weight:500 ;
+			color:#00bcd4 ;
+		}
+		.contact .content p{
+			font-size:1em ;
+			
+			color:#fff ;
+		}
+		.container_box{
+			width: 100%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			margin-top:20px ;
+		}
+		.container_box .contactInfo{
+			width: 50%;
+			display:flex;
+			flex-direction: column;
+		}
+		.container_box .contactInfo .box{
+			position:relative;
+			padding:20px 0;
+			display: flex;
+		}
+		.container_box .contactInfo .box .icon{
+			min-width: 60px;
+			height: 60px;
+			background: rgb(199, 192, 192,0.8);
+			display:flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 50%;
+			font-size: 22px;
+			border: 1px solid #fff;
+		}
+		.icon:hover{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+		}
+		.container_box .contactInfo .box .text{
+			display:flex;
+			margin-left: 20px;
+			font-size:16px ;
+			color:#fff;
+			flex-direction: column;
+			font-weight: 200;
+		}
+		.container_box .contactInfo .box .text h3{
+			font-size: 1.5em;
+			font-weight: 500;
+			color:#00bcd4;
+		} 
+		.contactForm{
+			width: 40%;
+			padding: 40px;
+			background:rgb(199, 192, 192);
+		
+		}
+		.contactForm h2{
+		   font-size: 30px; 
+		   color:rgb(34, 32, 32);
+		   font-weight: 500;
+		}
+		.contactForm .inputBox{
+			position:relative ;
+			width: 100%;
+			margin-top:10px;
+		}
+		.contactForm .inputBox input,
+		.contactForm .inputBox textarea{
+			width:100%;
+			padding: 5px 0;
+			font-size:16px ;
+			margin: 10px 0;
+			border:none;
+			border-bottom:2px solid #333;
+			outline:none;
+			resize:none;
+		}
+		.contactForm .inputBox span{
+			position:absolute;
+			left:0;
+			padding: 5px 0;
+			font-size: 16px;
+			margin:10px 0;
+			pointer-events:none;
+			transition: 0.5s;
+			color:#00bcd4;
+		
+		}
+		.contactForm .inputBox input:focus ~ span,
+		.contactForm .inputBox input:valid ~ span,
+		.contactForm .inputBox textarea:focus ~ span,
+		.contactForm .inputBox textarea:valid ~ span{
+			color:#666;
+			font-size: 15px;
+			transform:translateY(-30px) ;
+		}
+		.contactLink{
+			text-decoration: none;
+			color:#fff;
+		}
+		.contactLink:hover{
+			font-weight: 500;
+			font-size:1.2em;
+		}
+		.contactForm .inputBox input[type="submit"]{
+			width:100px;
+			background: #023e46;
+			color:#fff;
+			border: none;
+			cursor: pointer;
+			padding: 10px;
+			font-size:20px ;
+			margin-top: 4%;
+		}
+		.contactForm .inputBox input[type="submit"]:hover{
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+		}
+		.icon_link{
+			color: #000;
+		}
+		
+		footer{
+			background-color:rgb(218, 218, 218) ;
+			font-size: 1em;
+			text-align: center;
+			
+		}
+		
+		  .social_list{
+			display: flex;
+			flex-wrap: wrap;
+			list-style-type: none;
+			justify-content: center;
+			padding: 0;
+			margin: 0;
+		   
+		
+		  }
+		  .social_list a{
+			
+			color: #000;
+			font-size: 0.6em;
+			margin: 5px 10px;
+			margin-top: 15px;
+			padding: 10px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			transition: 0.5s;
+			border: 1px solid rgb(255, 251, 251);
+			border-radius: 50%;
+			background-color: rgb(177, 175, 175);
+			
+		  }
+		  .social_list a:link,.social_list a:visited{
+			color: #000;
+		  }
+		  .social_list a:hover{
+			background-color: #023e46;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+			font-size: 0.8em;
+		  }
+		  p.copyright{
+			color:#023e46;
+			font-size:1em;
+		  }
+		  @media(max-width:450px){
+			
+			.social_list{
+			  flex-direction: column;
+			}
+		  }
+		
+		@media(max-width:991px)
+		{
+			.contact{
+				padding: 50px;
+		
+			}
+			.container{
+				flex-direction: column;
+			}
+			.container .contactInfo{
+				margin-bottom: 40px;
+				width: 100%;
+			}
+			.contactForm{
+				width:100%;
+			}
+        } 
+        
