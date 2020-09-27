@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -5,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="codeit.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'codeit.css' %}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 	<title>Covid</title>
     </head>
@@ -20,12 +21,12 @@
 									<a class="nav-link text-white dropdown-toggle" href="#" data-toggle="dropdown">
 										<span class="text-uppercase">Latest News and Updates on Covid-19</span>
 									</a><div class="dropdown-menu"><a class="dropdown-item" href="https://indianexpress.com/article/cities/mumbai/mumbai-few-n-95-masks-health-workers-doctors-use-scarves-3-ply-mask-cloth-in-hospitals-6332941/
-										" target="_blank">Mumbai: Faced with N95 masks shortage, doctors and health workers use scarves, 3-ply masks</a> 
-										<a class="dropdown-item" target="_blank" href="https://www.nejm.org/doi/full/10.1056/NEJMp2006141">Critical Supply Shortages — The Need for Ventilators and Personal Protective Equipment during the Covid-19 Pandemic</a> 
+										" target="_blank">Mumbai: Faced with N95 masks shortage, doctors and health workers use scarves, 3-ply masks</a>
+										<a class="dropdown-item" target="_blank" href="https://www.nejm.org/doi/full/10.1056/NEJMp2006141">Critical Supply Shortages — The Need for Ventilators and Personal Protective Equipment during the Covid-19 Pandemic</a>
 										<a class="dropdown-item" target="_blank" href="https://www.who.int/news-room/detail/03-03-2020-shortage-of-personal-protective-equipment-endangering-health-workers-worldwide">Shortage of PPE Kit endangering health workers worldwide</a>
 										 <a class="dropdown-item" target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0048969720320453
 										 ">Solutions for addressing critical shortage of supply chain</a>
-										  <a class="dropdown-item" target="_blank" href="https://www.bbc.com/news/world-asia-india-53304858">The struggle to keep India's Covid-19 patients breathing</a> 
+										  <a class="dropdown-item" target="_blank" href="https://www.bbc.com/news/world-asia-india-53304858">The struggle to keep India's Covid-19 patients breathing</a>
 										  <a class="dropdown-item" target="_blank" href="https://timesofindia.indiatimes.com/india/covid-19-iaf-airlifts-60-tonnes-of-medical-supplies/articleshow/74968328.cms">
 											Covid-19: IAF airlifts 60 tonnes of medical supplies</a>
 										</div>
@@ -37,7 +38,7 @@
 					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
 					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
 					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> </a></li>
-					
+
 					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://api.whatsapp.com/send?phone=919892997943&amp;text=Hey!"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </a></li>
 				</ul>
 			</nav>
@@ -48,42 +49,36 @@
 	<div class="container">
 		<div class="row">
 	<nav class="navbar navbar-expand-lg navbar-light w-100" id="header-navbar">
-		<img src="logo.png" height="150px" width="150px">
-	<a class="navbar-brand font-weight-bold" href="codeit.html">COWOOF!</a> 
+		<img src="{%static 'logo.png'%}" height="150px" width="150px">
+	<a class="navbar-brand font-weight-bold" href= "codeit.html">COWOOF!</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto">
-			<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#about">About</a></li>
-			<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#khushi">Services</a></li>
-			
-				<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#cont">Contacts</a></li>
+			<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#about" >About</a></li>
+			<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#services">Services</a></li>
+
+				<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#contacts">Contacts</a></li>
 			</ul>
 			<div class="navbar-spacer"></div>
-			<a class="btn btn-outline-primary text-nowrap" href="login.html" data-toggle="none" target="_self">Login!</a>
+			<a class="btn btn-outline-primary text-nowrap" href= "login.html" data-toggle="none" target="_self">Login!</a>
 		</div>
-	
+
 	</nav>
 </div>
 </div>
 </div>
 </section>
-		
-		
+
+
 			<div class="row carsel">
 				<div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-				
+
 					<div class="carousel-inner">
 					  <div class="carousel-item active">
-						<img class="d-block w-100 image w" src="covidmask.png" alt="First Slide" >
-							
+						<img class="d-block w-100 image w" src = "{%static 'covidmask.png'%}" alt="First Slide" >
+
 					  </div>
 					  <div class="carousel-item">
-						<img class="d-block w-100 image" src="hand.png" alt="Second slide">
-					  </div>
-					  <div class="carousel-item">
-						<img class="d-block w-100 image" src="slider1.png" alt="Third slide">
-					  </div>
-					  <div class="carousel-item">
-						<img class="d-block w-100 image" src="slider2.png" alt="Fourth slide">
+						<img class="d-block w-100 image" src="{% static 'hand.png'%}" alt="Second slide">
 					  </div>
 					</div>
 					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -96,7 +91,7 @@
 					</a>
 				  </div>
 				</div>
-				<div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12" id="about">
+				<div id="about" class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12" style="hei">
 					<h1>WHY COWOOF?</h1>
 					Our website is working in overdrive to get protective gear and critical care medications to as many health workers as possible, as quickly as possible, with emergency deliveries leaving daily for medical facilities across the U.S.<br><br><br>
 					Since January, our website have helped in connecting the donors to the NGO’s and delivered more than 30 million N95 and surgical masks, more than 7 million gloves, more than 1 million face shields and tens of thousands of protective suits and other items to help safeguard health workers.<br><br><br>
@@ -104,58 +99,27 @@
 				</div>
 			</div>
 		</div>
-		<div class="row" id="khushi">
+		<div class="row" id="khushi services" >
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="col1">
-				<img src="donate.png" height="60%" width="70%"> 
+				<img src="{ %static "donate.png" %}" height="60%" width="50%">
 				<div>Help people by donating masks,groceries etc!<br>Click on the button below to donate!<br><br>
 				<a class="btn btn-outline-dark text-nowrap col3" href="#current" data-toggle="none" target="_self">Donate!</a><br>
-				   		
+
 				</div>
-				
+
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="col2">
-				<img src="ngo1.png" height="60%" width="60%"><br><br>
+				<img src="{% static "ngo1.png" %}" height="60%" width="50%"><br><br>
 				Having trouble with masks,beds,ventilators etc?<br>
 				Click below to get help!<br>
 				<br><a class="btn btn-outline-dark text-nowrap col3" href="requirements.html" data-toggle="none" target="_self">Help us!</a><br>
-				
+
 			</div>
 		</div>
 
 		<div>
 			<h2 id="current">Current NGO Requirements</h2>
 		</div>
-
-
-
-
-		<div class="container" id='pushDown'>
-			<ul class="collection with-header" id='postList'>
-			  
-			  {% for crop in newCrop %}
-			  <li class="collection-item avatar">
-				<img src="logo.png" alt="logo" class='circle materialboxed' height="90px" width="90px">
-				<div>
-				<span class="title">{{crop.addCropName}}</span>
-				{% if user.is_authenticated %}
-				  
-				{% endif %}
-				</div>
-				<p>
-				  <div>
-					<span class="gapper">Quantity : {{crop.addCropQuantity}}kg</span>
-					<a class="right" id="contact" href='addProduct.html'>Donate</a>
-				  </div>
-				  {{crop.addCropDescription}} <br>
-				</p>
-			  </li>
-			  {% endfor %}
-			</ul>
-		
-		  </div>
-	
-
-
 
 
 
@@ -185,7 +149,7 @@
 							<p>
 							   <a class="contactLink" href="mailto:richashah962@gmail.com" title="Email me">richashah962@gmail.com</a>
 							</p>
-							
+
 						</div>
 					</div>
 					<div class="box">
@@ -195,11 +159,11 @@
 							<p>
 							   <a class="contactLink" href="tel:9892997943" title="Call Me">+91 9892997943</a><br>
 							</p>
-		
+
 						</div>
 					</div>
 				</div>
-				<div class="contactForm" id="cont">
+				<div class="contactForm">
 					<form action="">
 						<h2>Send Message</h2>
 						<div class="inputBox">
@@ -223,66 +187,32 @@
 						</div>
 					</form>
 				</div>
-		
-		
+
+
 			</div>
-		</section>      
+		</section>
 		<footer>
 			<!-- Made with <i class="fas fa-heart"></i> by Richa Shah -->
-			<section class="Contact_Me" id="#contact">
+			<section class="Contact_Me" id="contacts">
 			<ul class="social_list">
 				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://www.instagram.com/richa_shah962"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
 				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
 				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
 				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> </a></li>
-				
+
 				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://api.whatsapp.com/send?phone=919892997943&amp;text=Hey!"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </a></li>
 			</ul>
 			<p class="copyright">&copy copyright.All rights reserved.</p>
 			</section>
-		</footer>    
-			
-	
-		
+		</footer>
+
+
+
 		    <script src="https://kit.fontawesome.com/ddb5b3cf32.js" crossorigin="anonymous"></script>
 			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-				
-			<script>
-				$(document).ready(function(){
-				  $('.materialboxed').materialbox();
-				});
-		
-				var list, i, switching, b, shouldSwitch;
-				list = document.getElementById("postList");
-				switching = true;
-				/* Make a loop that will continue until
-				no switching has been done: */
-				while (switching) {
-				  // Start by saying: no switching is done:
-				  switching = false;
-				  b = list.getElementsByTagName("LI");
-				  // Loop through all list items:
-				  for (i = 0; i < (b.length - 1); i++) {
-					// Start by saying there should be no switching:
-					shouldSwitch = false;
-					/* Check if the next item should
-					switch place with the current item: */
-					if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-					  /* If next item is alphabetically lower than current item,
-					  mark as a switch and break the loop: */
-					  shouldSwitch = true;
-					  break;
-					}
-				  }
-				  if (shouldSwitch) {
-					/* If a switch has been marked, make the switch
-					and mark the switch as done: */
-					b[i].parentNode.insertBefore(b[i + 1], b[i]);
-					switching = true;
-				  }
-				}
-			  </script>
+
+
     </body>
 </html>
