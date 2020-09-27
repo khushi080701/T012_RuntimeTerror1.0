@@ -1,0 +1,333 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{% static 'codeit.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+	<title>Covid</title>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        a{
+            text-decoration: none;
+        }
+
+        #navStyle{
+          background-image: linear-gradient(to right, #434343 0%, black 100%);
+          text-align: center;
+        }
+        #navStyle a{
+          color : grey;
+        }
+        #navh2{
+          font-family: 'Montserrat', sans-serif;
+          letter-spacing: 12px;
+          margin: 0 auto 0 auto;
+          padding-top: 5px !important;
+          text-transform: uppercase;
+        }
+        #pushDown{
+            margin-top: 30px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        #listHead{
+            text-transform: uppercase;
+        }
+        #styleListItem{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 16px;
+            font-weight:bold;
+            text-transform: uppercase;
+            color:grey;
+        }
+        #listHead{
+          background-image: linear-gradient(to right, #434343 0%, black 100%);
+          color:grey;
+        }
+        #listHead h4{
+          letter-spacing:4px;
+        }
+        @media(max-width:500px){
+          nav{
+              min-height:65px;
+          }
+          #noRight{
+              float:none !important;
+              display: block;
+              margin-top: 5px !important;
+          }
+      }
+  </style>
+    </head>
+    <body>
+		<section class="header header-fixed-xl">
+			<div class="header-top-line bg-primary">
+				<div>
+					<div class="row">
+						<nav class="navbar navbar-expand navbar-fixed-top navbar-dark navbar-short justify-content-between w-100 richa">
+							<ul class="navbar-nav">
+								<li class="nav-item dropdown dropdown-flat dropdown-flat-primary">
+									<a class="nav-link text-white dropdown-toggle" href="#" data-toggle="dropdown">
+										<span class="text-uppercase">Latest News and Updates on Covid-19</span>
+									</a><div class="dropdown-menu"><a class="dropdown-item" href="https://indianexpress.com/article/cities/mumbai/mumbai-few-n-95-masks-health-workers-doctors-use-scarves-3-ply-mask-cloth-in-hospitals-6332941/
+										" target="_blank">Mumbai: Faced with N95 masks shortage, doctors and health workers use scarves, 3-ply masks</a>
+										<a class="dropdown-item" target="_blank" href="https://www.nejm.org/doi/full/10.1056/NEJMp2006141">Critical Supply Shortages — The Need for Ventilators and Personal Protective Equipment during the Covid-19 Pandemic</a>
+										<a class="dropdown-item" target="_blank" href="https://www.who.int/news-room/detail/03-03-2020-shortage-of-personal-protective-equipment-endangering-health-workers-worldwide">Shortage of PPE Kit endangering health workers worldwide</a>
+										 <a class="dropdown-item" target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0048969720320453
+										 ">Solutions for addressing critical shortage of supply chain</a>
+										  <a class="dropdown-item" target="_blank" href="https://www.bbc.com/news/world-asia-india-53304858">The struggle to keep India's Covid-19 patients breathing</a>
+										  <a class="dropdown-item" target="_blank" href="https://timesofindia.indiatimes.com/india/covid-19-iaf-airlifts-60-tonnes-of-medical-supplies/articleshow/74968328.cms">
+											Covid-19: IAF airlifts 60 tonnes of medical supplies</a>
+										</div>
+									</li>
+			</ul>
+			<span class="navbar-text text-uppercase d-flex align-items-center">
+				<ul class="social_list">
+					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://www.instagram.com/richa_shah962"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> </a></li>
+
+					<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://api.whatsapp.com/send?phone=919892997943&amp;text=Hey!"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<div class="header-main bg-white">
+	<div class="container">
+		<div class="row">
+	<nav class="navbar navbar-expand-lg navbar-light w-100" id="header-navbar">
+		<img src="{%static 'logo.png'%}" height="150px" width="150px">
+	<a class="navbar-brand font-weight-bold" href= "codeit.html">COWOOF!</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto">
+			<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#about" >About</a></li>
+			<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#services">Services</a></li>
+
+				<li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#contacts">Contacts</a></li>
+			</ul>
+			<div class="navbar-spacer"></div>
+			<a class="btn btn-outline-primary text-nowrap" href= "login.html" data-toggle="none" target="_self">Login!</a>
+		</div>
+
+	</nav>
+</div>
+</div>
+</div>
+</section>
+
+
+			<div class="row carsel">
+				<div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12"><div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<img class="d-block w-100 image w" src = "{%static 'covidmask.png'%}" alt="First Slide" >
+
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image" src="{% static 'hand.png'%}" alt="Second slide">
+					  </div>
+            <div class="carousel-item">
+						<img class="d-block w-100 image" src='{%static "slider1.png"%}' alt="Third slide">
+					  </div>
+					  <div class="carousel-item">
+						<img class="d-block w-100 image" src='{%static "slider2.png"%}' alt="Fourth slide">
+					  </div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="sr-only">Next</span>
+					</a>
+				  </div>
+				</div>
+				<div id="about" class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12" style="hei">
+					<h1>WHY COWOOF?</h1>
+					Our website is working in overdrive to get protective gear and critical care medications to as many health workers as possible, as quickly as possible, with emergency deliveries leaving daily for medical facilities across the U.S.<br><br><br>
+					Since January, our website have helped in connecting the donors to the NGO’s and delivered more than 30 million N95 and surgical masks, more than 7 million gloves, more than 1 million face shields and tens of thousands of protective suits and other items to help safeguard health workers.<br><br><br>
+         			We coordinating with public health authorities, nonprofit organizations and businesses in the U.S. and globally to provide personal protective equipment, essential medical items, and emergency funding to health workers and organizations responding to coronavirus (COVID-19).<br><br><br>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="khushi services" >
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="col1">
+				<img src="{ %static "donate.png" %}" height="60%" width="50%">
+				<div>Help people by donating masks,groceries etc!<br>Click on the button below to donate!<br><br>
+				<a class="btn btn-outline-dark text-nowrap col3" href="#current" data-toggle="none" target="_self">Donate!</a><br>
+
+				</div>
+
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="col2">
+				<img src="{% static "ngo1.png" %}" height="60%" width="50%"><br><br>
+				Having trouble with masks,beds,ventilators etc?<br>
+				Click below to get help!<br>
+				<br><a class="btn btn-outline-dark text-nowrap col3" href="requirements.html" data-toggle="none" target="_self">Help us!</a><br>
+
+			</div>
+		</div>
+
+		<div>
+			<h2 id="current">Current NGO Requirements</h2>
+		</div>
+    <div class="container" id='pushDown'>
+            <ul class="collection with-header">
+              {% for crop in newCrop %}
+              {% if crop.addCropName == user.cropName %}
+              <li class="collection-item avatar">
+                <img src="{{crop.addCropImg.url}}" alt="Crop-Image" class='circle materialboxed'>
+                <div>
+                <span class="title">{{crop.addCropName}}</span>
+                {% if user.is_authenticated %}
+                  <span id='contact' class='right'>contact: {{crop.addContact}}</span>
+                {% endif %}
+                </div>
+                <p>
+                  <div>
+                    Rs {{crop.addCropPrice}}/kg
+                    <span class="gapper">Quantity : {{crop.addCropQuantity}}kg</span>
+                  </div>
+                  {{crop.addCropDescription}} <br>
+                </p>
+              </li>
+
+              {% endif %}
+              {% endfor %}
+
+            </ul>
+          </div>
+
+
+
+		<section class="contact">
+			<div class="content">
+				<h2>Contact Us</h2>
+				</div>
+			<div class="container_box">
+				<div class="contactInfo">
+					<div class="box">
+						<div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+						<div class="text">
+							<h3>Address</h3>
+							<p>
+								Calista Wise,<br>
+								4671 Sugar Camp Road,<br>
+								San Antonio MI,<br>
+								47096
+							</p>
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><a class="contactLink icon_link" href="mailto:richashah962@gmail.com" title="Email me"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+						<div class="text">
+							<h3>Email Id</h3>
+							<p>
+							   <a class="contactLink" href="mailto:richashah962@gmail.com" title="Email me">richashah962@gmail.com</a>
+							</p>
+
+						</div>
+					</div>
+					<div class="box">
+						<div class="icon"><a class="contactLink icon_link" href="tel:9892997943" title="Call Me"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
+						<div class="text">
+							<h3>Phone</h3>
+							<p>
+							   <a class="contactLink" href="tel:9892997943" title="Call Me">+91 9892997943</a><br>
+							</p>
+
+						</div>
+					</div>
+				</div>
+				<div class="contactForm">
+					<form action="">
+						<h2>Send Message</h2>
+						<div class="inputBox">
+							<input type="text" name="" required="required">
+							<span>Full Name</span>
+							<div class="inputBox">
+								<input type="email" name="" required="required">
+								<span>Email Id</span>
+							</div>
+							<div class="inputBox">
+								<input type="tel" name="" required="required">
+								<span>Contact No.</span>
+							</div>
+							<div class="inputBox">
+								<textarea required="required"></textarea>
+								<span>Message</span>
+							</div>
+							<div class="inputBox">
+								<input type="submit" name="" value="Send">
+							</div>
+						</div>
+					</form>
+				</div>
+
+
+			</div>
+		</section>
+		<footer>
+			<!-- Made with <i class="fas fa-heart"></i> by Richa Shah -->
+			<section class="Contact_Me" id="contacts" >
+			<ul class="social_list">
+				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://www.instagram.com/richa_shah962"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
+				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> </a></li>
+
+				<li class="social_list_item"><a class="social_list_link" target="_blank" href="https://api.whatsapp.com/send?phone=919892997943&amp;text=Hey!"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </a></li>
+			</ul>
+			<p class="copyright">&copy copyright.All rights reserved.</p>
+			</section>
+		</footer>
+
+
+
+		    <script src="https://kit.fontawesome.com/ddb5b3cf32.js" crossorigin="anonymous"></script>
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!--JavaScript at end of body for optimized loading-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+        var list, i, switching, b, shouldSwitch;
+            list = document.getElementById("postList");
+            switching = true;
+            /* Make a loop that will continue until
+            no switching has been done: */
+            while (switching) {
+              // Start by saying: no switching is done:
+              switching = false;
+              b = list.getElementsByTagName("LI");
+              // Loop through all list items:
+              for (i = 0; i < (b.length - 1); i++) {
+                // Start by saying there should be no switching:
+                shouldSwitch = false;
+                /* Check if the next item should
+                switch place with the current item: */
+                if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                  /* If next item is alphabetically lower than current item,
+                  mark as a switch and break the loop: */
+                  shouldSwitch = true;
+                  break;
+                }
+              }
+              if (shouldSwitch) {
+                /* If a switch has been marked, make the switch
+                and mark the switch as done: */
+                b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                switching = true;
+              }
+            }
+        </script>
+      </body>
+    </html>
