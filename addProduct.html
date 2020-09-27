@@ -5,11 +5,182 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="loginAddSignup.css">
+	<link rel="stylesheet" >
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <script src="https://kit.fontawesome.com/ddb5b3cf32.js" crossorigin="anonymous"></script>
 	<title>Add your Product</title>
+<style>
+@import url('https://fonts.googleapis.com/css2');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins',sans-serif;
+
+}
+.richa {
+  background-color: #023e46;
+  padding:10px 100px;
+}
+
+form {
+
+    background-color: #f1f1f1;
+    font-family: 'Lemonada',sans-serif;
+  }
+
+  input[type=text], input[type=password]  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  /*added by sayli*/
+  input[type=number],input[type=file]{
+    width: 38%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  /*added by sayli*/
+  select{
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  .butt {
+      background-color: #023E46;
+      color: white;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+  }
+  .icon_link{
+    color: #000;
+  }
+
+  footer{
+    background-color:rgb(218, 218, 218) ;
+    font-size: 1em;
+    text-align: center;
+
+  }
+
+    .social_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+
+    }
+    .social_list a{
+
+    color: #000;
+    font-size: 0.6em;
+    margin: 5px 10px;
+    margin-top: 15px;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.5s;
+    border: 1px solid rgb(255, 251, 251);
+    border-radius: 50%;
+    background-color: rgb(177, 175, 175);
+
+    }
+    .social_list a:link,.social_list a:visited{
+    color: #000;
+    }
+    .social_list a:hover{
+    background-color: #023e46;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.39), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+    font-size: 0.8em;
+    }
+    p.copyright{
+    color:#023e46;
+    font-size:1em;
+    }
+    @media(max-width:450px){
+
+    .social_list{
+      flex-direction: column;
+    }
+    }
+
+  @media(max-width:991px)
+  {
+    .contact{
+      padding: 50px;
+
+    }
+    .container{
+      flex-direction: column;
+    }
+    .container .contactInfo{
+      margin-bottom: 40px;
+      width: 100%;
+    }
+    .contactForm{
+      width:100%;
+    }
+      }
+
+</style>
     </head>
     <body>
+
       <section class="header header-fixed-xl">
         <div class="header-top-line bg-primary">
           <div>
@@ -20,12 +191,12 @@
                     <a class="nav-link text-white dropdown-toggle" href="#" data-toggle="dropdown">
                       <span class="text-uppercase">Latest News and Updates on Covid-19</span>
                     </a><div class="dropdown-menu"><a class="dropdown-item" href="https://indianexpress.com/article/cities/mumbai/mumbai-few-n-95-masks-health-workers-doctors-use-scarves-3-ply-mask-cloth-in-hospitals-6332941/
-                      " target="_blank">Mumbai: Faced with N95 masks shortage, doctors and health workers use scarves, 3-ply masks</a> 
-                      <a class="dropdown-item" target="_blank" href="https://www.nejm.org/doi/full/10.1056/NEJMp2006141">Critical Supply Shortages — The Need for Ventilators and Personal Protective Equipment during the Covid-19 Pandemic</a> 
+                      " target="_blank">Mumbai: Faced with N95 masks shortage, doctors and health workers use scarves, 3-ply masks</a>
+                      <a class="dropdown-item" target="_blank" href="https://www.nejm.org/doi/full/10.1056/NEJMp2006141">Critical Supply Shortages — The Need for Ventilators and Personal Protective Equipment during the Covid-19 Pandemic</a>
                       <a class="dropdown-item" target="_blank" href="https://www.who.int/news-room/detail/03-03-2020-shortage-of-personal-protective-equipment-endangering-health-workers-worldwide">Shortage of PPE Kit endangering health workers worldwide</a>
                        <a class="dropdown-item" target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0048969720320453
                        ">Solutions for addressing critical shortage of supply chain</a>
-                        <a class="dropdown-item" target="_blank" href="https://www.bbc.com/news/world-asia-india-53304858">The struggle to keep India's Covid-19 patients breathing</a> 
+                        <a class="dropdown-item" target="_blank" href="https://www.bbc.com/news/world-asia-india-53304858">The struggle to keep India's Covid-19 patients breathing</a>
                         <a class="dropdown-item" target="_blank" href="https://timesofindia.indiatimes.com/india/covid-19-iaf-airlifts-60-tonnes-of-medical-supplies/articleshow/74968328.cms">
                         Covid-19: IAF airlifts 60 tonnes of medical supplies</a>
                       </div>
@@ -37,7 +208,7 @@
             <li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
             <li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
             <li class="social_list_item"><a class="social_list_link" target="_blank" href="https://github.com/richashah962"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i> </a></li>
-            
+
             <li class="social_list_item"><a class="social_list_link" target="_blank" href="https://api.whatsapp.com/send?phone=919892997943&amp;text=Hey!"><i class="fab fa-whatsapp fa-2x" aria-hidden="true"></i> </a></li>
           </ul>
         </nav>
@@ -48,47 +219,26 @@
     <div class="container">
       <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light w-100" id="header-navbar">
-      <img src="logo.png" height="150px" width="150px">
-    <a class="navbar-brand font-weight-bold" href="codeit.html">COWOOF!</a> 
+    <a class="navbar-brand font-weight-bold">DONATE HERE</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse" id="navbarSupportedContent"><ul class="navbar-nav ml-auto">
-        <li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#khushi">Services</a></li>
-        
-          <li class="nav-item"><a class="nav-link text-uppercase" data-toggle="smooth-scroll" href="#cont">Contacts</a></li>
-        </ul>
-        <div class="navbar-spacer"></div>
-        <a class="btn btn-outline-primary text-nowrap" href="login.html" data-toggle="none" target="_self">Login!</a>
-      </div>
-    
-    </nav>
-  </div>
-  </div>
-  </div>
-  </section>
- 
-   
-  
+      <span class="navbar-toggler-icon"></span></button><ul class="navbar-nav ml-auto">
 
-<div class="container">
-                <form method='POST' enctype='multipart/form-data' id='addPostForm'>
-                  {% csrf_token %}
-                  <div class="postHeader">
-                    <h4>Donate Here!</h4>
-                  </div>
+    </nav>
+                <form>
+
                     <div class="container">
                       <label for="uname"><b>Name</b></label>
                       <input type="text" placeholder="Enter Full Name" name="uname" required>
-            
+
                       <label for="uname"><b>Contact Number</b></label>
                       <input type="text" placeholder="Enter Contact number" name="contact" required>
-                  
+
                       <label for="uname"><b>City</b></label>
                       <input type="text" placeholder="Enter City name" name="city" required>
-            
+
                       <label for="uname"><b>State</b></label>
                       <input type="text" placeholder="Enter State name" name="state" required>
-                      
+
                       <label for="uname"><b>Product</b></label>
                       <input type="text" placeholder="Enter Product name" name="product" required>
 
@@ -105,30 +255,27 @@
                         <option value="Other Medical equipments">
 
                       </datalist>
-                     
+
                       <label for="uname"><b>Quantity in units</b></label>
                       <input type="number" placeholder="Enter quantity" name="quantity" required>
-            
+
                       <label for="uname"><b>Image</b></label>
                       <input type="file" id="img" name="img" accept="image/*">
-                    
-                      <div class="container">
-                        {{form.as_p}}
-                        <button type='submit' class='btn btn-dark'id='submitBtn'>Submit</button>
-                      </div>
+
+                      <button formaction="#" type="submit" class="btn butt" >Submit</button>
                       <label>
-                    
+
                     </div>
-                    
-                    
+
+                    </div>
                 </form>
-              </div>
-			
-		
+
+
+
 			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-				
-	
+
+
     </body>
 </html>
